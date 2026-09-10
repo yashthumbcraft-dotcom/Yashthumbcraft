@@ -5,13 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Motion Graphics | Yashthumbcraft</title>
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    .video-section {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .video-card {
+      overflow: hidden;
+    }
+
+    .video-card video {
+      width: 100%;
+      height: auto;
+      display: block;
+      background: #000;
+      border-radius: 18px 18px 0 0;
+    }
+
+    .video-info {
+      padding: 18px 20px;
+    }
+
+    @media (max-width: 800px) {
+      .video-section {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
   <nav class="navbar">
-    <div class="logo">Yashthumbcraft</div>
-    <a href="index.html" class="back-btn">← Back</a>
+    <a class="logo" href="index.html">Yashthumbcraft</a>
+    <a class="back-btn" href="index.html">← Back</a>
   </nav>
 
   <section class="page-header">
@@ -23,44 +53,39 @@
   <section class="video-section">
 
     <div class="video-card">
-      <div class="instagram-embed">
-        <blockquote
-          class="instagram-media"
-          data-instgrm-permalink="https://www.instagram.com/reel/DdCDDVaIcYy/"
-          data-instgrm-version="14">
-        </blockquote>
+      <video controls playsinline preload="metadata">
+        <source src="assets/VIDEO1.mp4" type="video/mp4">
+        Your browser does not support video playback.
+      </video>
+      <div class="video-info">
+        <h2>Motion Graphics Edit 1</h2>
+        <p>Creative Motion Design</p>
       </div>
-      <h2>Motion Graphics Edit</h2>
-      <p>Creative Motion Design</p>
     </div>
 
     <div class="video-card">
-      <div class="instagram-embed">
-        <blockquote
-          class="instagram-media"
-          data-instgrm-permalink="https://www.instagram.com/reel/Dc3mYhCoNd3/"
-          data-instgrm-version="14">
-        </blockquote>
+      <video controls playsinline preload="metadata">
+        <source src="assets/VIDEO2.mp4" type="video/mp4">
+        Your browser does not support video playback.
+      </video>
+      <div class="video-info">
+        <h2>Motion Graphics Edit 2</h2>
+        <p>Visual Motion Design</p>
       </div>
-      <h2>Motion Graphics Edit</h2>
-      <p>Visual Motion Design</p>
     </div>
 
     <div class="video-card">
-      <div class="instagram-embed">
-        <blockquote
-          class="instagram-media"
-          data-instgrm-permalink="https://www.instagram.com/reel/Dc1NcHST0JK/"
-          data-instgrm-version="14">
-        </blockquote>
+      <video controls playsinline preload="metadata">
+        <source src="assets/VIDEO3.mp4" type="video/mp4">
+        Your browser does not support video playback.
+      </video>
+      <div class="video-info">
+        <h2>Motion Graphics Edit 3</h2>
+        <p>Creative Visual Editing</p>
       </div>
-      <h2>Motion Graphics Edit</h2>
-      <p>Creative Visual Editing</p>
     </div>
 
   </section>
-
-  <script async src="https://www.instagram.com/embed.js"></script>
 
   <footer>
     <p>© 2026 Yashthumbcraft. All Rights Reserved.</p>
